@@ -1,9 +1,9 @@
 const express = require('express');
 const ctrl = require("../../controllers/contacts");
 
-// const { validateBody } = require('../../middlewares');
-// const {addSchema} = require('../../schemas/contacts');
-// validateBody(addSchema),
+// const { validateBody } = require('../../middlewares/index');
+// const { addSchema } = require('../../schemas/contacts');
+// validateBody(schemas.addSchema),
 // const Joi = require('joi');
 // const contacts = require('../../models/contacts');
 // const { HttpError } = require("../../helpers");
@@ -74,7 +74,7 @@ router.delete('/:contactId', ctrl.deleteById);
 //   }
 // })
 
-router.put('/:contactId',  ctrl.updateById);
+router.put('/:contactId', ctrl.updateById);
 
 // router.put('/:contactId', async (req, res, next) => {
 //   try {
